@@ -2,7 +2,7 @@
 set -ex
 
 sudo ./alpine-make-rootfs \
-	--packages 'curl openssl openssh-client iptables xz apk-tools' \
+	--packages 'curl openssl openssh-client iptables xz git apk-tools' \
 	--script-chroot \
 	rootfs.tar.gz -- content/alpine.sh
 
