@@ -2,7 +2,7 @@
 set -ex
 
 sudo ./alpine-make-rootfs \
-	--branch 'v3.14' \
+	--branch 'v3.15' \
 	--packages 'curl openssl openssh-client iptables xz git apk-tools' \
 	--script-chroot \
 	rootfs.tar.gz -- content/alpine.sh
